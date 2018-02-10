@@ -7,8 +7,9 @@ const schema = require('./schema/schema');
 
 const app = express();
 
-// Replace with your mongoLab URI
-const MONGO_URI = '';
+// Replaced with my mongoLab URI
+const MONGO_URI =
+  'mongodb://cbanks:cbanks@ds231758.mlab.com:31758/lyricaldb';
 if (!MONGO_URI) {
   throw new Error('You must provide a MongoLab URI');
 }
